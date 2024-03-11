@@ -126,6 +126,8 @@ cardCvcInput.onkeydown = function (event) {
   }
 };
 
+// test
+
 // ================== Validate form function ==================
 const form = document.getElementsByClassName("fields-container")[0];
 form.addEventListener("submit", (event) => {
