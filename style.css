@@ -9,46 +9,46 @@ General features
 */
 
 * {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
 }
 
 html {
-    font-size: 18px;
-    color: hsl(278, 68%, 11%);
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
+  font-size: 18px;
+  color: hsl(278, 68%, 11%);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 img {
-    object-fit: fill;
+  object-fit: fill;
 }
 
 input {
-    font-size: 18px;
-    height: 2.3rem;
-    width: 100%;
-    padding: 5%;
-    border-radius: 10px;
-    box-shadow: none;
-    border: 1px solid rgba(0,0,0,0.1);
+  font-size: 18px;
+  height: 2.3rem;
+  width: 100%;
+  padding-left: 15px;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-::placeholder{
-    color: hsl(279, 6%, 55%);
+::placeholder {
+  color: hsl(279, 6%, 55%);
 }
 
 input:focus {
-    outline: none;
-    border-color: hsl(278, 94%, 30%);
+  outline: none;
+  border-color: hsl(278, 94%, 30%);
 }
 
 p {
-    margin-bottom: 10px;
-    font-size: 15px;
-    text-align: justify;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: justify;
 }
 /*
 ========================
@@ -57,16 +57,16 @@ main-container
 */
 
 .main-container {
-    display: grid;
-    grid-template-rows: 230px 1fr;
-    height: 100vh;
+  display: grid;
+  grid-template-rows: 230px 1fr;
+  height: 100vh;
 }
 
 .left-container {
-    background-image: url('images/bg-main-mobile.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
+  background-image: url("images/bg-main-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 /*
@@ -76,34 +76,35 @@ card images
 */
 
 .card-images-container {
-    position: relative;
-    font-size: 11px;
+  position: relative;
+  font-size: 11px;
 }
 
 .card-images-container * {
-    position: absolute;
+  position: absolute;
 }
 
 #card-back {
-    background-image: url(images/bg-card-back.png);
-    transform: translate(-25%, 15%);
-    left: 40%;
-    z-index: 1;
-    color:white;
+  background-image: url(images/bg-card-back.png);
+  transform: translate(-25%, 15%);
+  left: 40%;
+  z-index: 1;
+  color: white;
 }
 
 #card-front {
-    background-image: url(images/bg-card-front.png);
-    transform: translate(-50%, 71%);
-    left: 40%;
-    z-index: 2;
+  background-image: url(images/bg-card-front.png);
+  transform: translate(-50%, 71%);
+  left: 40%;
+  z-index: 2;
 }
 
-#card-front, #card-back {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 155px;
-    width: 270px;
+#card-front,
+#card-back {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 155px;
+  width: 270px;
 }
 
 /*
@@ -113,14 +114,14 @@ Card back content
 */
 
 #card-back {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 35px;
 }
 
 .on-card-cvc-number {
-    color:white;
+  color: white;
 }
 
 /*
@@ -130,52 +131,52 @@ Card front content
 */
 
 #card-front {
-    display: grid;
-    grid-template-columns: 30px 1fr 1fr;
-    grid-template-rows: 30px 1fr 25%;
-    column-gap: 10px;
-    grid-template-areas:
-        "logo-alias             small-logo-alias            ."
-        "card-number-alias      card-number-alias       card-number-alias"
-        "cardholder-name-alias  cardholder-name-alias   exp-date-alias";
-    color:white;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr;
+  grid-template-rows: 30px 1fr 25%;
+  column-gap: 10px;
+  grid-template-areas:
+    "logo-alias             small-logo-alias            ."
+    "card-number-alias      card-number-alias       card-number-alias"
+    "cardholder-name-alias  cardholder-name-alias   exp-date-alias";
+  color: white;
+  padding: 20px;
 }
 
 #on-card-logo {
-    grid-area: logo-alias;
-    height: 30px;
-    width: 30px;
-    border-radius: 50% 50%;
-    border: 1px solid white;
-    background-color: white;
+  grid-area: logo-alias;
+  height: 30px;
+  width: 30px;
+  border-radius: 50% 50%;
+  border: 1px solid white;
+  background-color: white;
 }
 
 #on-card-logo-small {
-    grid-area: small-logo-alias;
-    height: 15px;
-    width: 15px;
-    border-radius: 50% 50%;
-    border: 1px solid white;
-    align-self: center;
+  grid-area: small-logo-alias;
+  height: 15px;
+  width: 15px;
+  border-radius: 50% 50%;
+  border: 1px solid white;
+  align-self: center;
 }
 
 #on-card-number {
-    grid-area: card-number-alias;
-    align-self: end;
-    font-size: 18px;
-    letter-spacing: 1px;
+  grid-area: card-number-alias;
+  align-self: end;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 #on-card-cardholder-name {
-    grid-area: cardholder-name-alias;
-    align-self: end;
+  grid-area: cardholder-name-alias;
+  align-self: end;
 }
 
 #on-card-expiration-date {
-    grid-area: exp-date-alias;
-    align-self: end;
-    justify-self: end;
+  grid-area: exp-date-alias;
+  align-self: end;
+  justify-self: end;
 }
 
 /*
@@ -185,48 +186,48 @@ fields container
 */
 
 .right-container {
-    display: grid;
-    margin-top: 11vh;
-    padding: 5%;
+  display: grid;
+  margin-top: 11vh;
+  padding: 5%;
 }
 
 .fields-container > div {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .expiration-date {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "date-text date-text"
-        "month-field year-field"
-        "error-text error-text";
-    column-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "date-text date-text"
+    "month-field year-field"
+    "error-text error-text";
+  column-gap: 10px;
 }
 
-#exp-date-text{
-    grid-area: date-text;
+#exp-date-text {
+  grid-area: date-text;
 }
 
-#exp-month-input{
-    grid-area: month-field;
+#exp-month-input {
+  grid-area: month-field;
 }
 
-#exp-year-input{
-    grid-area: year-field;
+#exp-year-input {
+  grid-area: year-field;
 }
 
-.expiration-date small{
-    grid-area: error-text;
+.expiration-date small {
+  grid-area: error-text;
 }
 
 .date-cvc-container {
-    display: grid;
-    grid-template-columns: 45% 55%;
+  display: grid;
+  grid-template-columns: 45% 55%;
 }
 
 .cvc {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 /*
@@ -236,14 +237,14 @@ Conditional form classes for error messages
 */
 
 .error-message-paragraph {
-    margin:0;
-    font-size: 12px;
-    color: red;
+  margin: 0;
+  font-size: 12px;
+  color: red;
 }
 
 .input-error {
-    border: 1px solid red;
-    border-radius: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
 }
 
 /*
@@ -253,25 +254,25 @@ Confirm button
 */
 
 button {
-    display:flex;
-    height: 2.7rem;
-    font-size: 1rem;
-    width: 100%;
-    padding: 5%;
-    margin-top: 10px;
-    border-radius: 10px;
-    box-shadow:  1px 2px 2px 1px rgba(0,0,0, 0.2);
-    border: 1px solid rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(278, 68%, 11%);
-    color:white;
+  display: flex;
+  height: 2.7rem;
+  font-size: 1rem;
+  width: 100%;
+  padding: 5%;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
 }
 
-button:hover{
-    cursor: pointer;
-    opacity: 0.8;
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 /*
@@ -280,20 +281,20 @@ Larguer size breakpoint
 ========================
 */
 
-@media (min-width:400px) {
+@media (min-width: 400px) {
+  #card-front,
+  #card-back {
+    left: 45%;
+  }
 
-    #card-front, #card-back {
-        left: 45%;
-    }
-    
-    .right-container {
-        grid-template-columns: 1fr minmax(200px, 400px) 1fr;
-        grid-template-areas: ". alias-fields .";
-    }
+  .right-container {
+    grid-template-columns: 1fr minmax(200px, 400px) 1fr;
+    grid-template-areas: ". alias-fields .";
+  }
 
-    .fields-container {
-        grid-area: alias-fields;
-    }
+  .fields-container {
+    grid-area: alias-fields;
+  }
 }
 
 /*
@@ -302,61 +303,60 @@ Desktop view breakpoint
 ========================
 */
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
+  html {
+    letter-spacing: 1.2px;
+    /* font-size: 18px; */
+  }
 
-    html {
-        letter-spacing: 1.2px;
-        /* font-size: 18px; */
-    }
+  input {
+    height: 2.7rem;
+    margin-bottom: 10px;
+  }
 
-    input {
-        height: 2.7rem;
-        margin-bottom: 10px;
-    }
+  button {
+    height: 3rem;
+  }
 
-    button {
-        height: 3rem;
-    }
-    
-    .main-container {
-        grid-template-rows: 1fr;
-        grid-template-columns: 30% 70%;
-    }
-    
-    .right-container {
-        margin-top: 0vh;
-        grid-template-columns: 40% minmax(300px, 440px) 1fr;
-        grid-template-areas: ". alias-fields .";
-        align-content: center;
-    }
+  .main-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 70%;
+  }
 
-    #card-back {
-        transform: none;
-        left: 15vw;
-        top: 53vh;
-        padding-right: 12%;
-        font-size: 1rem;
-    }
-    
-    #card-front {
-        transform: none;
-        left: 9vw;
-        top: 20vh;
-        padding: 7%;
-        font-size: 0.8rem;
-    }
+  .right-container {
+    margin-top: 0vh;
+    grid-template-columns: 40% minmax(300px, 440px) 1fr;
+    grid-template-areas: ". alias-fields .";
+    align-content: center;
+  }
 
-    #card-back, #card-front {
-        height: 245px;
-        width: 447px;
-    }
-    
-    .fields-container {
-        padding: 5%;
-    }
+  #card-back {
+    transform: none;
+    left: 15vw;
+    top: 53vh;
+    padding-right: 12%;
+    font-size: 1rem;
+  }
 
-    #on-card-number {
-        font-size: 1.8rem;
-    }
+  #card-front {
+    transform: none;
+    left: 9vw;
+    top: 20vh;
+    padding: 7%;
+    font-size: 0.8rem;
+  }
 
+  #card-back,
+  #card-front {
+    height: 245px;
+    width: 447px;
+  }
+
+  .fields-container {
+    padding: 5%;
+  }
+
+  #on-card-number {
+    font-size: 1.8rem;
+  }
 }
