@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    font-size: 18px;
+    color: hsl(278, 68%, 11%);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    letter-spacing: 3px;
+}
+
+.fields-container {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 30% 15% 15% auto;
+}
+
+.fields-container p {
+    color: hsl(279, 6%, 55%);
+}
+
+@media (min-width:400px) {
+
+}
+
+@media (min-width:992px) {
+    .fields-container {
+        grid-template-rows: 50% 20% 20% auto;
+    }
+}
