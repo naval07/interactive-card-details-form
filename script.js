@@ -78,7 +78,7 @@ cardHolderNameInput.onkeydown = function (event) {
   }
 };
 
-// Function to set numbers only on card number input field
+// Function to set numbers only on card number input field and adding a space every 4 digits
 cardNumInput.onkeydown = function (event) {
   // Code from https://awik.io/allow-numbers-input-field-javascript/
   if (!/^[0-9]$/.test(event.key) && event.key !== "Backspace") {
