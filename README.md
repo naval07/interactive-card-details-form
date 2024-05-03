@@ -13,8 +13,6 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
