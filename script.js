@@ -16,7 +16,10 @@ function resetInputStyle(inputField) {
   if (container.querySelector("small")) {
     errorMsg = container.querySelector("small");
     container.removeChild(errorMsg);
-    inputField.classList.remove("input-error");
+    for (c of container.children) {
+      c.classList.remove("input-error");
+    }
+    // inputField.classList.remove("input-error");
   }
 }
 
